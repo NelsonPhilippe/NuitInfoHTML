@@ -1,62 +1,106 @@
 .button {
-  position: relative;
-  display: inline-block;
-  margin: 20px;
-  border-radius: 50%;
-
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 50%;
+  
+  }
+  
+  .button a {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffa12b;
+    display: block;
+    position: relative;
+    padding: 20px 40px;
+  
+  
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+    -webkit-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
+    -moz-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
+    box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
+  
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 50%;
+  
+  }
+  
+  .button a:active {
+    top: 10px;
+    background-color: #f78900;
+  
+    -webkit-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #915100;
+    -moz-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3pxpx 0 #915100;
+    box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #915100;
+    border-radius: 50%;
+  
+  }
+  
+  .button:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    padding: 4px;
+    position: absolute;
+    bottom: -15px;
+    left: -4px;
+    z-index: -1;
+    background-color: #2b1800;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border-radius: 50%;
+  
+  }
+body{
+    background-color: aquamarine;
 }
-
-.button a {
-  color: white;
-  font-family: Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 36px;
-  text-align: center;
-  text-decoration: none;
-  background-color: #ffa12b;
-  display: block;
-  position: relative;
-  padding: 20px 40px;
-
-
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  text-shadow: 0px 1px 0px #000;
-  filter: dropshadow(color=#000, offx=0px, offy=1px);
-
-  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
-  -moz-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
-  box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
-
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 50%;
-
+head{
+    height: 400px;
 }
+.ui {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: rgb(252, 249, 249);
+  }
+  .tab1 {
+    grid-column: 1 ;
+    grid-row: 1;
+    border: black ridge;
+  }
+  .tab2 {
+    grid-column: 3;
+    grid-row: 2 / 2;
+    border: black ridge;
+  }
+  .tab3 {
+    grid-column: 1 ;
+    grid-row: 3 ;
+    border: black ridge;
+  }
+  .tab4 {
+    grid-column: 1/ 3;
+    grid-row: 4 / 4 ;
+    border: black ridge;
+  }
+  .tab5 {
+    grid-column: 2 / 3;
+    grid-row: 2;
+    border: black ridge;
+  }
+  .tab6{
+    grid-column: 2 / 3;
+    grid-row: 3;
+    border: black ridge;
+  }
 
-.button a:active {
-  top: 10px;
-  background-color: #f78900;
-
-  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #915100;
-  -moz-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3pxpx 0 #915100;
-  box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #915100;
-  border-radius: 50%;
-
-}
-
-.button:after {
-  content: '';
-  height: 100%;
-  width: 100%;
-  padding: 4px;
-  position: absolute;
-  bottom: -15px;
-  left: -4px;
-  z-index: -1;
-  background-color: #2b1800;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  border-radius: 50%;
-
-}
